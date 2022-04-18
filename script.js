@@ -7,4 +7,4 @@ const i = setInterval(
     document.getElementById("main-page").style.display = "inline";
     document.getElementById("page-loading").style.display = "none";
 
-}, 1000);
+}, 4000);
