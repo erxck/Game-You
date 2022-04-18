@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html {
+    /* A cada 1rem equivale a 10px */
+    font-size: 62.5%;
+}
+
 body {
     background-color: #000;
     font-family: 'Cinzel', serif;
@@ -14,11 +19,11 @@ body {
 }
 
 h1 {
-    font-size: 100px;
+    font-size: 10.0rem;
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 4.0rem;
 }
 
 .container {
@@ -31,7 +36,7 @@ h2 {
 
 .container .load {
     padding-top: 90px;
-    font-size: 40px;
+    font-size: 4.0rem;
     color: #00FF00;
 }
 
@@ -48,21 +53,62 @@ h2 {
 }
 
 .main-section .paragraph-and-input {
-    font-size: 20px;
+    font-size: 2.0rem;
     color: #00FF00;
     padding: 55px;
 }
 
 .input {
-    padding: 15px;
+    padding-top: 15px;
 }
 
-#input-one {
+.input #input-one {
     font-family: 'Cinzel', serif;
     background-color: #000;
     color: #00FF00;
-    font-size: 17px;
+    font-size: 1.7rem;
     border: none;
     outline: 0;
-    width: 470px;
+    width: 90%;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+    /* loading */
+    #image-one {
+        height: 300px;
+    }
+}
+
+/* loading */
+@media (max-width: 593px) {
+    #image-one {
+        height: 270px;
+    }
+}
+
+/* loading */
+@media (max-width: 425px) {
+    #image-one {
+        height: 240px;
+    }
+}
+
+/* loading */
+@media (max-width: 375px) {
+    html {
+        font-size: 45%;
+    }
+    #image-one {
+        height: 200px;
+    }
+}
+
+@media (max-width: 352px) {
+    .input #input-one {
+        width: 85%;
+    }
 }
